@@ -1,6 +1,5 @@
-function a1(){
-    console.log('clicked');
-    const seatName = document.getElementById('a1').innerText ;
+function commonFunction(id){
+    const seatName = document.getElementById(id).innerText ;
     const seats = document.getElementById('seats');
     const newSeat = document.createElement('li');
     newSeat.classList.add('flex' , 'justify-around');
@@ -17,7 +16,4 @@ function a1(){
     const newp3 = document.createElement('p');
     newp3.innerText = '550' ;
     newSeat.appendChild(newp3);
-}
-function a2(){
-    commonFunction('a2');
 }
