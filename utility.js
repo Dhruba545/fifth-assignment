@@ -1,12 +1,20 @@
 function commonFunction(id){
-    
-    bookingSeat.push(id);
-    const seatCount = bookingSeat.length;
+    if(seatCount < 4){
+    seatCount ++ ;
+    const button = document.getElementById(id);
+    button.disabled = true ;
+
+    const leftSeat = document.getElementById('available-seat');
+    leftSeat.innerText = 20 -seatCount;    
+  
+    const totalSeat = document.getElementById('totalSeat');
+    totalSeat.innerText = seatCount ;
+
     totalPrise = seatCount * 550 ;
     const giveMoney = document.getElementById('totalPrice');
     giveMoney.innerText = totalPrise;
 
-    const seatName = document.getElementById(id).innerText ;
+    const seatName = button.innerText ;
     const seats = document.getElementById('seats');
     const newSeat = document.createElement('li');
     newSeat.classList.add('flex' , 'justify-around');
@@ -23,4 +31,5 @@ function commonFunction(id){
     const newp3 = document.createElement('p');
     newp3.innerText = '550' ;
     newSeat.appendChild(newp3);
+    }
 }

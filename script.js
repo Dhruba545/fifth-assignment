@@ -1,4 +1,4 @@
-const bookingSeat = [];
+let seatCount = 0;
 
 
 function a1(){
