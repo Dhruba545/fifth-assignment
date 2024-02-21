@@ -1,5 +1,8 @@
 const codeSubmit = document.getElementById('code-submit');
 const grandTotal = document.getElementById('grand-total');
+const number  = document.getElementById('number');
+const discount1 = document.getElementById('discount1');
+const discount2 = document.getElementById('discount2');
 const nextButton = document.getElementById('submit-button') ;
 const inputFeild = document.getElementById('coupon-code');
 let seatCount = 0;
@@ -76,14 +79,22 @@ document.getElementById('coupon-code').addEventListener('keyup' , function(){
             grandTotal.innerText = 1870;
             inputFeild.classList.add('hidden');
             codeSubmit.classList.add('hidden');
+            discount1.classList.remove('hidden');
         })
 }
+
+// document.getElementById('number').addEventListener('keyup' , function(){
+//     const numberValue = number.value;
+//     console.log("My name");
+// })
+
 if(inputValue === 'Couple 20'){
     codeSubmit.classList.remove('hidden'); 
         document.getElementById('code-submit').addEventListener('click' ,function(){
             grandTotal.innerText = 1760;
             inputFeild.classList.add('hidden');
             codeSubmit.classList.add('hidden');
+            discount2.classList.remove('hidden');
         })
 }
 
