@@ -3,8 +3,10 @@ function commonFunction(id){
     seatCount ++ ;
     const button = document.getElementById(id);
     button.disabled = true ;
+    nextButton.disabled = false ;
+    button.classList.add('bg-green-500');
      
-    const grandTotal = document.getElementById('grand-total');
+    
     grandTotal.innerText = 550*seatCount;
 
     const leftSeat = document.getElementById('available-seat');
@@ -34,5 +36,11 @@ function commonFunction(id){
     const newp3 = document.createElement('p');
     newp3.innerText = '550' ;
     newSeat.appendChild(newp3);
+
+    
+    
+    if(seatCount === 4){
+        inputFeild.classList.remove('hidden');
+    }
     }
 }
