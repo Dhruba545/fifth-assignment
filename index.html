@@ -118,8 +118,8 @@
     <button class=" py-4 px-8  font-bold rounded-md"> See All Offers</button>
    </div> 
 
-<main class="w-full bg-[#CCCCCC] mt-[120px] rounded-t-[40px]" ><br>
-    <div id="info-section" class="w-[1170px] h-[597px] mt-16 flex flex-col mx-auto">
+<main class="w-full  bg-[#CCCCCC] mt-[120px] rounded-t-[40px]" ><br>
+    <div id="info-section" class="w-[1170px]  mt-16 flex flex-col mx-auto">
      <div class="w-[1170px] h-[179px] space-y-4">                              <!--P.H Paribahan section of main div-->
         <h2 class="text-center text-[40px] text-black font-bold"> P.H Paribahan</h2>
         <p class="text-[18px] text-center text-black opacity-70 font-inter "> Yes, you can run unit tests and view the results directly within the app. The integrated <br>
@@ -166,17 +166,129 @@
         </div>
  
      </div>      <!--This is the End of upper site-->
+     <div class="w-[1170px] h-[1056px] mt-10 bg-white rounded-[20px] mx-auto flex text-black ">       <!--This is the down site of main section-->
+      <div class="w-3/5  h-full  "><!--Left site from lower div--><br>
+        <div class="h-[50px] ml-6  text-2xl border-b-2 mt-7 font-semibold text-black "> Select Your Seat</div><!--Div1-->
+                <div class="h-[56px] ml-6  text-2xl font-semibold  border-b-2 flex justify-between items-center"> <!--div2-->
+                     <div class="flex text-[20px] font-normal space-x-3"><img src="images/seat-gray.png" class="w-8 h-8"><p class="text-gray-800">Available</p> </div>
+                     <div class="flex text-[20px] font-normal space-x-3 mr-5"><img src="images/seat-green-filled.png" class="w-8 h-8" ><p class="text-[#1DD100]">Selected</p> </div>
+                     </div>
+                     <div class="flex justify-end my-10"><!--Div3-->
+                         <div class="bg-[#0307120A] w-[110px] h-[56px] flex justify-center items-center mr-6 rounded-lg" ><img src="images/steering.png" class="w-12 h-12">  </div> 
+                        </div>
 
+                     <div class="flex justify-between"><!--Div4-->
+                        <div class="flex flex-col space-y-4 "> <!--Div 4.1-->
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>A</p><button onclick =a1() id="a1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >A1</button><button onclick =a2() id="a2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >A2</button></div>
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>B</p><button onclick =b1() id="b1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >B1</button><button onclick =b2() id="b2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >B2</button></div>
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>C</p><button onclick =c1() id="c1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >C1</button><button onclick =c2() id="c2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >C2</button></div>
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>D</p><button onclick =d1() id="d1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >D1</button><button onclick =d2() id="d2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >D2</button></div>
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>E</p><button onclick =e1() id="e1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >E1</button><button onclick =e2() id="e2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >E2</button></div>
+                        </div>
+                        <div class="flex flex-col space-y-4"><!--Div 4.2-->
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=a3() id="a3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >A3</button><button onclick =a4() id="a4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >A4</button>  </div>
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=b3() id="b3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >B3</button><button onclick =b4() id="b4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >B4</button>  </div>
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=c3() id="c3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >C3</button><button onclick =c4() id="c4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >C4</button>  </div>
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=d3() id="d3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >D3</button><button onclick =d4() id="d4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >D4</button>  </div>
+                            <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=e3() id="e3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >E3</button><button onclick =e4() id="e4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >E4</button>  </div>
+                        </div>
+                     </div>
+
+      </div><!--Left lower end-->
+      <div class="w-2/5  h-full bg-green-200"> <!--Right lower-->
+                    <hr>
+                   <div><!--Div 1 -->
+                    <div class="ml-6  text-2xl font-semibold h-[50px] border-b-2 mt-14"> Select Your Seat</div>
+                   </div>
+                   <div class="h-[837px] w-[433px] mx-auto mt-5 bg-[#F7F8F5] font-inter "><!--div 2-->
+                    <div class="w-full h-[335px]  space-y-1"><!--Div 2.1-->
+                        <div class="w-full h-16 mx-3  flex justify-around text-xl font-bold text-black items-center border-b-2 "><!--Div 2.11--> <div class="flex space-x-2"><p>Seat</p><span id="totalSeat">0</span></div><p>Class</p><p>Price</p> </div>
+                        <div  class="w-full h-[86px] mx-3 flex flex-col border-b-4 border-black "> <!--Div 2.12-->
+                           <ul id="seats">
+                            <!-- <ul></ul><ul></ul><ul></ul><ul></ul> -->
+                           </ul>
+ 
+
+
+
+                       </div>
+                        <div class="w-full h-12 mx-3 flex justify-around text-xl font-bold text-black items-center "><!--2.13-->
+                           <p>Total Price </p> <p> </p><div class="flex space-x-5 mr-4" ><p>BDT</p><span id="totalPrice">0</span></div>
+                        </div>
+                        <div class="w-full h-16 mx-3 flex items-center rounded-l-[20px]  "> <!-- 2.14-->
+                           <input onclick =couponCode() id="coupon-code" class="w-2/3 h-full rounded-l-[20px] hidden " placeholder="Have any copupon?">
+                           <button onclick=codeSubmit() id="code-submit" class="w-1/3 h-[90%] rounded-lg bg-[#1DD100] text-white text-xl hidden"> Apply</button>
+                        </div>
+                        <div class="w-full h-12 mx-3 flex justify-around text-xl font-bold text-black items-center "><!--Div 2.15-->
+                           <p>Grand Total</p> <p> </p><div class="flex space-x-5 mr-4" ><p>BDT</p><span id="grand-total" onclick =grandTotal() >0</span></div>
+                        </div>
+                    </div>
+                    <div class="w-full h-[581px] bg-white flex flex-col justify-around"><!--Div 2.2-->
+                           
+                        <div class="w-[433px] h-[99px]  space-y-3.5">
+                            <p class="text-xl font-bold text-black">Passenger Name*</p>
+                            <input type="text" class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
+                            </div>
+                             <div class="w-[433px] h-[99px]  space-y-3.5">
+                            <p class="text-xl font-bold text-black">Phone Number*</p>
+                            <input id="number" type="number" class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
+                            </div>
+                             <div class="w-[433px] h-[99px]  space-y-3.5">
+                            <p class="text-xl font-bold text-black">Email ID</p>
+                            <input type="email" class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
+                            </div>
+                             <div class="w-[433px] h-[99px] ">
+                                <button id="submit-button" class="h-[55%] w-full bg-[#1DD100] disabled rounded-xl text-white text-2xl font-bold "> Next</button>
+                             </div>
+                             <div class="flex mx-10 justify-around"> <p>Terms and Conditions</p> <p>Cancellation Policy</p> </div>
+                    </div>
+                   </div>
+     </div>
     </div>
-    
+</main>
+ </main>
+
+
+<main id="part2" class=" hidden h-screen bg-gray-100 flex justify-center items-center "> <!--This is the second page -->
+    <div class="w-[788px] h-[481px] flex flex-col justify-around items-center text-center bg-white ">
+        <div class="mt-8"><img src="images/success.png"> </div>
+        <div class="text-[24px] font-bold text-[#27AE60] "> SUCCESS</div>
+        <div class="space-y-3" >
+            <div class="text-[20px] font-medium text-[#4A4A4A]  ">Thank you for Booking Our Bus Seats. <br>
+                We are working hard to find the best service and deals for you.</div>
+            <div class="text-[20px] font-light text-[#4A4A4A]">Shortly you will find a confirmation in your email.</div>
+        </div>
+        <button class=" mb-6 w-[300px] h-[55px] bg-[#27AE60] text-white text-[20px] font-semibold flex justify-center items-center rounded-2xl ">Continue</button>
+    </div>
 </main>
 
-        
-    </main>
 
-
-
-
+<footer>
+    <footer class="footer p-10 bg-black text-base-content">
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">BUS</a>
+          <a class="link link-hover">AC BUS</a>
+          <a class="link link-hover">TRAIN</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Social</h6> 
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+          </div>
+        </nav>
+      </footer>
+</footer>
 
 </body>
 </html>
