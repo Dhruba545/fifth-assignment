@@ -3,6 +3,9 @@ function commonFunction(id){
     seatCount ++ ;
     const button = document.getElementById(id);
     button.disabled = true ;
+     
+    const grandTotal = document.getElementById('grand-total');
+    grandTotal.innerText = 550*seatCount;
 
     const leftSeat = document.getElementById('available-seat');
     leftSeat.innerText = 20 -seatCount;    
