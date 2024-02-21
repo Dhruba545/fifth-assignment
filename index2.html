@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Target Example</title>
+</head>
+<body>
+
+<button id="myButton">Click me</button>
+
+<script>
+  // বাটনে ক্লিক ইভেন্টের হ্যান্ডলার ফাংশন
+  function handleClick(event) {
+    // event.target দ্বারা কোন এলিমেন্টটি ক্লিক হয়েছে তা প্রিন্ট করা হচ্ছে
+    console.log('Clicked element:', event.target);
+  }
+
+  // বাটনের এলিমেন্ট কে ধরণের মধ্যে সেট করা
+  var myButton = document.getElementById('myButton');
+
+  // বাটনে ক্লিক ইভেন্টের হ্যান্ডলার সেট করা
+  myButton.addEventListener('click', handleClick);
+</script>
+
+</body>
+</html>

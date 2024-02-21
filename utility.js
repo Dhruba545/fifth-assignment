@@ -1,4 +1,11 @@
 function commonFunction(id){
+    
+    bookingSeat.push(id);
+    const seatCount = bookingSeat.length;
+    totalPrise = seatCount * 550 ;
+    const giveMoney = document.getElementById('totalPrice');
+    giveMoney.innerText = totalPrise;
+
     const seatName = document.getElementById(id).innerText ;
     const seats = document.getElementById('seats');
     const newSeat = document.createElement('li');
