@@ -9,7 +9,7 @@ let seatCount = 0;
 nextButton.disabled = true;
 
 function a1(){
-    console.log('clicked');
+    commonFunction('a1');
     
 }
 function a2(){
