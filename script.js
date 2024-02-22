@@ -83,10 +83,7 @@ document.getElementById('coupon-code').addEventListener('keyup' , function(){
         })
 }
 
-// document.getElementById('number').addEventListener('keyup' , function(){
-//     const numberValue = number.value;
-//     console.log("My name");
-// })
+
 
 if(inputValue === 'Couple 20'){
     codeSubmit.classList.remove('hidden'); 
@@ -101,6 +98,13 @@ if(inputValue === 'Couple 20'){
 }
 )
 
+document.getElementById('number').addEventListener('keyup' , function(){
+    const numberValue = number.value;
+    console.log(numberValue);
+    if(seatCount > 0 && numberValue != ''){  
+        nextButton.disabled = false ;
+    }
+})
 
 
 

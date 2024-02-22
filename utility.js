@@ -3,7 +3,6 @@ function commonFunction(id){
     seatCount ++ ;
     const button = document.getElementById(id);
     button.disabled = true ;
-    nextButton.disabled = false ;
     button.classList.add('bg-green-500');
      
     
@@ -42,5 +41,8 @@ function commonFunction(id){
     if(seatCount === 4){
         inputFeild.classList.remove('hidden');
     }
+    }
+    else{
+        alert("You can't select more than 4 seat THANK YOU")
     }
 }
